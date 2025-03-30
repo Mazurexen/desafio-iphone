@@ -10,30 +10,40 @@ Tudo funciona via terminal, sem interface gráfica, focado no aprendizado de POO
 
 ```mermaid
 classDiagram
-    class iPhone {
+    class AparelhoTelefonico {
+        <<interface>>
+        +fazerChamada(String numero)
+        +receberChamada(String numero)
+        +enviarMensagem(String numero, String mensagem)
+        +receberMensagem(String numero, String mensagem)
     }
 
     class ReprodutorMusical {
-        +tocarMusica(String nome)
+        <<interface>>
+        +tocarMusica(String musica)
         +pausarMusica()
-        +selecionarMusica(String nome)
-    }
-
-    class AparelhoTelefonico {
-        +fazerChamada(String numero)
-        +receberChamada()
-        +encerrarChamada()
     }
 
     class NavegadorInternet {
-        +abrirPagina(String url)
-        +adicionarAosFavoritos(String url)
-        +atualizarPagina()
+        <<interface>>
+        +acessarPagina(String url)
+        +buscar(String termo)
     }
 
-    iPhone ..|> ReprodutorMusical
-    iPhone ..|> AparelhoTelefonico
-    iPhone ..|> NavegadorInternet
+    class Iphone {
+        +tocarMusica(String musica)
+        +pausarMusica()
+        +fazerChamada(String numero)
+        +receberChamada(String numero)
+        +enviarMensagem(String numero, String mensagem)
+        +receberMensagem(String numero, String mensagem)
+        +acessarPagina(String url)
+        +buscar(String termo)
+    }
+
+    Iphone ..|> AparelhoTelefonico
+    Iphone ..|> ReprodutorMusical
+    Iphone ..|> NavegadorInternet
 ```
 
 ---
