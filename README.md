@@ -1,4 +1,4 @@
-# 📱 Simulador de iPhone em Java
+# Simulador de iPhone em Java
 
 Esse projeto é uma simulação simples de um iPhone usando os conceitos básicos de Programação Orientada a Objetos (POO) com Java. A ideia foi separar os comportamentos em interfaces e ter uma classe `iPhone` que implementa tudo isso.
 
@@ -6,7 +6,7 @@ Tudo funciona via terminal, sem interface gráfica, focado no aprendizado de POO
 
 ---
 
-## 📐 Diagrama UML (feito em Mermaid)
+## Diagrama UML
 
 ```mermaid
 classDiagram
@@ -38,26 +38,26 @@ classDiagram
 
 ---
 
-## 🧩 O que cada parte faz
+## O que cada parte faz
 
-### 🎶 Reprodutor Musical
+### Reprodutor Musical
 - `tocarMusica(nome)`: imprime que a música está tocando.
 - `pausarMusica()`: simula a pausa da música atual.
 - `selecionarMusica(nome)`: troca a música atual.
 
-### 📞 Aparelho Telefônico
+### Aparelho Telefônico
 - `fazerChamada(numero)`: simula a ligação pra alguém.
 - `receberChamada()`: simula alguém te ligando.
 - `encerrarChamada()`: encerra a ligação.
 
-### 🌐 Navegador de Internet
+### Navegador de Internet
 - `abrirPagina(url)`: abre uma página fictícia.
 - `adicionarAosFavoritos(url)`: salva o link nos favoritos.
 - `atualizarPagina()`: recarrega a página atual.
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 O foco aqui é praticar os pilares da programação orientada a objetos de forma prática e didática:
 
@@ -67,7 +67,7 @@ O foco aqui é praticar os pilares da programação orientada a objetos de forma
 
 ---
 
-## 🚀 Como rodar
+## Como rodar
 
 1. Clona o projeto:
    ```bash
@@ -86,7 +86,3 @@ O foco aqui é praticar os pilares da programação orientada a objetos de forma
    ```
 
 ---
-
-## 👤 Autor
-
-Feito por [Matheus Mazurechen Barros](https://github.com/seu-usuario) — aprendendo POO do jeito certo 🧉
